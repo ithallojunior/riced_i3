@@ -56,6 +56,10 @@ exec --no-startup-id nm-applet
 #Lockscreen
 bindsym $mod+Shift+x exec i3lock -i ~/Pictures/lockscreen/lock.png
 
+#Mounting
+set $USER mydrive
+bindsym $mod+m exec --no-startup-id "(udisksctl mount -b /dev/sdb2||  udisksctl mount -b /dev/sdb1) && gnome-terminal -x ranger /media/$USER"
+
 
 # Pulse Audio controls
 bindsym F6  exec --no-startup-id pactl set-sink-volume 0 +5%
