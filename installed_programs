@@ -1,0 +1,15 @@
+lightdm
+i3 suckless-tools
+ranger
+gnome-vim
+tmux
+pulseaudio
+pulseaudio-utils
+pavucontrol
+rofi
+gnome-terminal
+zathura
+feh
+compton
+gnome-network-manager
+vlc
