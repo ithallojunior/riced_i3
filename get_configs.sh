@@ -2,6 +2,7 @@
 
 cp -R ~/.fonts/ ./
 cp ~/.config/i3/config ./
+cp -R ~/.config/i3/scripts ./
 cp ~/.i3status.conf ./
 cp ~/.vimrc ./
 cp ~/.rofi.conf ./

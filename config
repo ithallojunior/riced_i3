@@ -56,7 +56,7 @@ bindsym $mod+d exec rofi -show run -config ~/.rofi.conf  #dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 #set wallpaper
-exec feh --bg-scale ~/Pictures/wallpapers/wallpaper.jpg
+exec feh --bg-scale ~/.wallpaper.jpg
 
 #set transparency
 exec compton -cCGfF -b -i 0.75 --vsync opengl
@@ -66,11 +66,11 @@ exec compton -cCGfF -b -i 0.75 --vsync opengl
 exec --no-startup-id nm-applet
 
 #Lockscreen
-bindsym $mod+Shift+x exec i3lock -i ~/Pictures/lockscreen/lock.png
+bindsym $mod+Shift+x exec i3lock -i ~/.lock.png
 
 #Mounting
 set $USER mydrive
-bindsym $mod+m exec "udisksctl mount -b /dev/sdb2||  udisksctl mount -b /dev/sdb1 && gnome-terminal -x ranger /media/$USER "
+bindsym $mod+m exec "python ~/.config/i3/scripts/mount_devices.py"
 
 
 # Pulse Audio controls
