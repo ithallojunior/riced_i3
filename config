@@ -18,7 +18,7 @@ set $mod Mod1
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 14
+font pango:DejaVu Sans Mono 9
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -64,7 +64,7 @@ exec feh --bg-scale ~/.wallpaper.jpg
 exec compton -cCGfF -b -i 0.75 --vsync opengl
 
 #set default resolution
-exec --no-startup-id ~/.default_resolution.sh
+#exec --no-startup-id ~/.default_resolution.sh
 
 #network manager
 exec --no-startup-id nm-applet
