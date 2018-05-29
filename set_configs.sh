@@ -1,4 +1,4 @@
-#! /usr/bin
+#! /bin/bash
 
 cp -R .fonts/ ~/
 cp config ~/.config/i3/config
